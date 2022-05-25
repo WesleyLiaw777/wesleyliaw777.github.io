@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Cheat Sheet</title>
+    </head>
+    <body>
+        <!-- How to comment. -->
+        <!-- Headings go 1-6. Large to small. -->
+        <h1>Heading one</h1> 
+        <h2>Heading two</h2>
+        <h3>Heading three</h3>
+        <h4>Heading four</h4>
+        <h5>Heading five</h5>
+        <h6>Heading six</h6>
+
+        <!--
+        Paragraphs.
+        Can use 'lorem' to get default paragraph.
+        <strong> bolds. <em> is emphasis (italics). <a> is link. href is hyperlink reference.
+        Tag attributes put in start tag: <tagname Key="Value"> content </tagname> format.
+        -->
+        <p>
+            <strong>Lorem ipsum dolor</strong> sit amet consectetur adipisicing elit. 
+            Quos, minus quae explicabo animi nobis neque pariatur magni
+            <em>saepe nemo dignissimos </em>perspiciatis distinctio quidem esse
+            <a href="http://www.google.com" target="_blank"> impedit deserunt ipsam nisi doloremque voluptatem. </a> 
+            <!-- <a> is link. href = hyperlink reference, I think. _blank means to open in new tab.-->
+        </p>
+
+        <!--
+        Lists.
+        <ul> is unordered list. Bullet points. <ol> is ordered list. Numbered points.
+        -->
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ol>
+
+        <!-- Tables. -->
+        <table>
+            <thead> <!--Header of table. Descriptors/categories.-->
+                <tr>
+                    <th>Name</th>
+                    <th>Income</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody> <!--Body. Each row is a different entry into the table.-->
+                <tr>
+                    <th>Jimmy</th>
+                    <th>100k</th>
+                    <th>25</th>
+                </tr>
+                <tr>
+                    <th>Janiera</th>
+                    <th>200k</th>
+                    <th>35</th>
+                </tr>
+                <tr>
+                    <th>Jessica</th>
+                    <th>80k</th>
+                    <th>20</th>
+                </tr>
+            </tbody>
+        </table>
+        <br> <!-- Line break.-->
+        <hr> <!-- Horizontal line. Helps visually divide.-->
+        <br>
+        <!-- 
+        Forms. HTML only handles look of form. Not function.
+        Format is..
+            <form>
+                <label> (Name)
+                <input type=""> (Your desired type)
+            </form>
+        -->
+        <form action"process.php" method="POST"> <!-- action, where to send it (?) method, what to do with it (?)-->
+            <div>
+                <label>First Name</label> <!--label is displayed name.-->
+                <input type="text" name="firstName"> <!-- Input from user. type is what stuff to put in. name is server-side. Like a variable name.-->
+            </div>
+            <br>
+            <div>
+                <label>Last Name</label>
+                <input type="text" name="lastName" placeholder="Last name here.."> <!-- placeholder gives nonintrusive description of what to do-->
+            </div>
+            <br>
+            <div>
+                <label>Email</label>
+                <input type="email" name="email"> <!-- Type email checks for validity of email-->
+                </div>
+            <br>
+            <div>
+                <label>Message</label>
+                <textarea name="message"></textarea> <!-- Text box.-->
+                </div>
+            <div>
+                <label>Gender</label> <!-- Dropdown list.-->
+                <select name="gender"> 
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div>
+                <label>Age:</label>
+                <input type="number" name="age" value="30"> <!-- number, is numbers. Arrows up & down. value, creates a default!-->
+            </div>
+            <br>
+            <div>
+                <label>Birthday:</label>
+                <input type="date" name="birthday"> <!--date, basic calendar to pick date.-->
+            </div>
+            <br>
+            <input type="submit" name="submit" value="Submit"> <!-- submit = submit button. value is the name. Sends it to action file above. -->
+        </form>
+
+        <!--Button-->
+        <button>Click Here</button> <!--Won't do anything without JavaScript.-->
+
+        <!--Images
+        img is image. src is filename of desired image. Specify path from root to find file.
+        alt is displayed text if image can't be shown.
+        Can use <a> to show in own page.
+        Height and width can be changed with HTML as shown, but CSS is recommended.
+        -->
+        <a href="images/first.jpg">
+            <img src="images/first.jpg" alt="First Code Screenshot" height="200" width="200">> 
+        </a>
+
+        <!-- Quotations -->
+            <!-- Blockquote is quote. Like tab, for a paragraph. Cite is where the quote came from.-->
+        <blockquote cite="http:www.google.com">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Praesentium soluta, maxime alias similique exercitationem quae assumenda!
+            Aperiam eius sequi harum amet quidem voluptatibus beatae, doloremque dignissimos tenetur molestias, dolore ipsam.
+        </blockquote>
+
+            <!--Abbreviations. Hovering over it to see extra info about the text.-->
+        <p>
+            The <abbr title="World Wide Web">WWW</abbr> is awesome
+        </p>
+
+            <!--Citations. Just italicizes to let site know it's citing.-->
+        <p>
+            <cite>HTML Crash Course</cite> by Brad Traversy
+        </p>
+
+        <div style ="margin-top:500px"></div> <!--Pushes page up.-->
+    </body>
+</html>
+
+
+
+<!--
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    So I'm leaving out the side door
+</body>
+</html>
+
+ Getting started instructions.
+    -Create index.html
+    -Exclamation mark, emmet abbrv, to get boilerplate above.
+    -Right click "index.html", Open Live Server for real-time view (Ctrl+S to update)
+    -Create styles.css
+    -Go forth 
+-->
