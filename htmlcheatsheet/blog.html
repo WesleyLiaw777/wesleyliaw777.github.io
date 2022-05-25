@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--For website to read.-->
+    <meta name="description" content="Blog by Wes">
+    <meta name="keywords" content="Wes, Blog, Web blog by Wes">
+    <title>My Blog</title>
+
+    <!--Some bonus CSS. Note how the IDs we wrote below can be edited right here.-->
+    <style type="text/css">
+        #main-header{
+            text-align:center;
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+
+        #main-footer{
+            text-align: center;
+            font-size:18px;
+        }
+
+    </style>
+</head>
+<body>
+    <header id="main-header"> <!--ID is for devs to work with.-->
+        <h1>My Website</h1>
+    </header>
+
+    <a href="htmlcheatsheet/index.html">Go to Index</a>
+    <section>
+        <article class="post"> <!--Area where you put your writing. Class is..?-->
+            <h3>Blog Post One</h3>
+            <small>Posted by Wes on May 25</small> <!--Small text.-->
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dolorum iste enim pariatur expedita est.
+                Exercitationem maxime provident, commodi velit
+                harum consequatur rem suscipit inventore sed nam fuga officiis iusto placeat?
+            </p>
+            <a href="post.html">Read More</a>
+        </article>
+
+        <article class="post">
+            <h3>Blog Post Two</h3>
+            <small>Posted by Wes on May 25</small>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dolorum iste enim pariatur expedita est.
+                Exercitationem maxime provident, commodi velit
+                harum consequatur rem suscipit inventore sed nam fuga officiis iusto placeat?
+            </p>
+            <a href="post.html">Read More</a>
+        </article>
+
+        <article class="post">
+            <h3>Blog Post Three</h3>
+            <small>Posted by Wes on May 25</small>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dolorum iste enim pariatur expedita est.
+                Exercitationem maxime provident, commodi velit
+                harum consequatur rem suscipit inventore sed nam fuga officiis iusto placeat?
+            </p>
+            <a href="post.html">Read More</a>
+        </article>
+
+        <aside> <!--Can't tell the difference, it went right below the other stuff. Maybe CSS needed.-->
+            <h3>Categories</h3>
+            <nav> <!--Can't tell difference.-->
+                <ul>
+                    <li><a href="#">Category 1</a></li> <!--# sign means to stay on page.-->
+                    <li><a href="#">Category 2</a></li>
+                    <li><a href="#">Category 3</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <footer id="main-footer"> <!--Small bottom text.-->
+            <p>Copyright &copy; 2022, My Website.</p> <!--Ampersand (&) gives symbol.-->
+        </footer>
+
+    </section>
+</body>
+</html>
