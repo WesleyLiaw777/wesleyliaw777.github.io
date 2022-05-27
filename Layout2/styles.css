@@ -1,0 +1,42 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+    padding:0;
+    margin:0;
+    box-sizing:border-box; /* I need to refresh on meaning. */
+}
+
+.container{
+    border: 4px solid black;
+    width:400px;
+    height:150px;
+    padding-left:100px; /* Just manually centered it.
+    /* I need both bar & icons to center within container.
+    Both jcc and aic don't work. Why is that?
+    */
+}
+
+.box-bar{
+    border: 2px solid gray;
+    width:200px;
+    height:15px;
+    margin: 5px 0 5px 0px;
+    /* margin-bottom: 5px;*/
+    /* I can push the bar around with margin,
+    but I need to actually center it. */
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    width:200px;
+    flex-wrap:wrap;
+}
+
+.box{
+    border: 2px solid gray;
+    height:10px;
+    width:30%; /*I need the boxes to spread out, not stretch. */
+    margin-bottom: 5px;
+    
+    /* How do I know when to use margin vs padding? */
+}
