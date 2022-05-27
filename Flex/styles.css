@@ -1,0 +1,26 @@
+*{
+    box-sizing:border-box; /* If not added, things don't fit properly. */
+}
+
+.container{ /* Where we want to do our flexing. Where our boxes are. */
+    width: 100%;
+    height:300px;
+    border:2px solid red;
+    display:flex; /* Your starter to a lethal 3-line combo right here. shortcut: d + f. */
+    justify-content: center; /* shortcut: j + c + c. */
+    align-items: center; /* AIC. Read the term here. Align items WITHIN container. So don't put this in .box.
+                            There's nothing in the box. (Yet)
+                            Parent (container) controls position of children (boxes) */
+    /* justify-content:space-between; Given 2 'boxes', will push content away from center. Common. */
+    /*
+    Remember, if flex-direction:column; the roles of justify and align swap. Hori&Vert -> Vert&Hori.
+    Alt Explanation: Align-items moves the group of boxes.
+                     Justify-content moves boxes along the line that connects them.
+    */ 
+}
+
+.box{
+    width:100px;
+    height:100px;
+    border:2px solid black;
+}
