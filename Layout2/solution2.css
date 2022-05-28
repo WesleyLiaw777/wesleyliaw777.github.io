@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+
+.row{ /* So when shrinking window, it'll fit. 
+        But makes sure it won't stretch into ugly.*/
+    width:100%; /* NEVER do width:600px. Cuts off content. */
+    max-width:600px; /* Content stops stretching @ this number.*/
+    margin: 0 auto; /* 1st # (0) = top & bot. 2nd # (auto) = L & R. Equal separation from L&R.
+                        Centers it after all this adjusting.
+                        Alt: jcc in container, like usual.
+                        But easier to keep everything in one place.*/
+}   
+
+.container {
+    border: 4px solid lightgray;
+    padding:24px 24px 0px 24px;
+    /* Since we put a margin-bottom on box,
+       we don't need padding in container bottom.
+       Need it everywhere else though. */
+}
+
+.title{
+    border: 2px solid lightgray;
+    width:100%;
+    height:24px;
+    margin-bottom:24px;
+}
+
+.box{
+    border: 4px solid lightgray;
+    width: 30%; /* Each box, is 33% width of screen. */
+    height:100px;
+    margin-bottom:24px;
+}
+
+.box-wrapper{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
