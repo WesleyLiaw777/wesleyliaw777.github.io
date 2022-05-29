@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    border: 4px solid lightgrey;
+    padding:24px 48px 24px 48px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.smalls{
+    width:50%;
+}
+
+.big{
+    width:50%;
+    /* Height will match its container. */
+}
+
+.big .box{
+    height:40px;
+}
+
+.tinys{
+display: flex;
+justify-content:space-between;
+}
+
+.tinys .box {
+    width:30%;
+}
+
+.box{
+    border: 2px solid lightgray;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    height:10px;
+}
