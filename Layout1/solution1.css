@@ -1,3 +1,17 @@
+
+.container{
+    border: 4px solid lightgray;
+    display: flex; /* All on one row */
+    justify-content: space-between; /* Separate 'logo' and 'menu' */
+    padding: 24px;
+}
+
+.box-wrapper{
+    display:flex; /* All in a row, vert. centered. */
+    align-items: center;
+}
+
+
 .box{
     border: 4px solid lightgray;
     width:100px;
@@ -8,16 +22,4 @@
     width:50px;
     height:50px;
     margin-left: 24px; /* So little boxes don't stick together. */
-}
-
-.box-wrapper{
-    display:flex; /* All in a row, vert. centered. */
-    align-items: center;
-}
-
-.container{
-    border: 4px solid lightgray;
-    display: flex; /* All on one row */
-    justify-content: space-between; /* Separate 'logo' and 'menu' */
-    padding: 24px;
 }
