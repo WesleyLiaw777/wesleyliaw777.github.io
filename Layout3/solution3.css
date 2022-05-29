@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    border:4px solid lightgray;
+    padding: 24px 24px 0 24px;
+    display:flex;
+    justify-content: space-between;
+    /* Combined with 45% widths, spaces nicely.
+        So we don't have to do margins, that's all.*/
+}
+
+.box{
+    border:4px solid lightgray;
+    /* height:100px; Preventing big box from stretching out.*/
+    margin-bottom:24px;
+}
+
+.box-small{
+    height:50px;
+}
+
+.box-wrapper{
+    width:45%;
+    padding-right: 24px;
+    /* Didn't need display-flex, flex-direction column
+        because by default css does display:block.
+        Which separates the boxes.
+        (Auto fdc, stacks elements on top of each other)
+    */
+}
+
+
+.box-large{
+    width:45%;
+}
