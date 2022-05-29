@@ -7,7 +7,7 @@
 
 .container{
     border: 4px solid black;
-    padding: 24px 24px 0 24px;
+    padding: 24px 24px 0 24px; /* 0 bot b/c boxes have own margin-bottom. */
     /* padding-left:100px; Just manually centered it.
     /* I need both bar & icons to center within container.
     Both jcc and aic don't work. Why is that?
@@ -24,20 +24,20 @@
 .icons{
     display: flex;
     justify-content: space-between;
-    /* DELETED: width:200px;
-    This prevented me from centering. When they
-    and at 30% width, it was impossible.
-    Conflicted with width line below.*/
     flex-wrap:wrap;
+    /* DELETED: width:200px;
+    This prevented me from centering.
+    Conflicted with width line below.*/
+    
 }
 
 .box{
     border: 2px solid gray;
     height:50px;
     width:30%;
-    /*I need the boxes to spread out, not stretch.
-                Edit: They are stretched..*/
     margin-bottom: 20px;
     
-    /* How do I know when to use margin vs padding? */
+    /* How do I know when to use margin vs padding?
+        Inspect element or just experiment, I guess.
+    */
 }
