@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    border: 4px solid lightgray;
+    padding: 20px 20px 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.points{
+    padding-right: 5px;
+    width:50%;
+}
+
+.box{
+    border: 2px solid lightgray;
+    height:10px;
+    margin-bottom: 6px;
+}
+
+.image{
+    width:50%;
+}
