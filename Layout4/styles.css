@@ -22,7 +22,7 @@
     height:40px;
 }
 
-.tinys{
+.tinys{ /* tiny-wrapper. */
 display: flex;
 justify-content:space-between;
 }
