@@ -6,8 +6,47 @@
     box-sizing: border-box;
 }
 
+/*
+
+NAVBAR
+
+*/
+
 nav{
+    background-color: skyblue;
     height: 70px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.logo{
+    width:300px;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    list-style-type: none;
+    margin-left: 24px;
+}
+
+a{
+    color:black;
+    font-size: 24px;
+    font-weight:700;
+}
+
+/*
+
+HEADER
+
+*/
+
+header{
+    display: flex;
+    align-items: center;
 }
