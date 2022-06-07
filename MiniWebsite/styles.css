@@ -49,4 +49,42 @@ HEADER
 header{
     display: flex;
     align-items: center;
+    background-color:plum;
+    min-height: calc(100vh - 70px);
+    /* 70px is the height of the nav bar, accounted for.
+    This line of code makes it so that the nav bar & header fill
+    your whole screen up. A "home page" look.
+    Bonus: 100vh means "100% of viewport height". So, matches viewer's screen.
+    */
 }
+
+.home__description,
+.home__img--wrapper{
+    width:50%;
+}
+
+.home__img--wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.home__description{
+    padding-left: 24px;
+}
+
+h1{
+    font-size: 80px;
+}
+
+.subheader{
+    font-size: 36px;
+}
+
+button{
+    background-color:aqua;
+    color:white;
+    font-size: 16px;
+    margin-top: 16px;
+    padding: 8px 8px;
+}
+
