@@ -334,7 +334,7 @@ FEATURES
 .book__img--wrapper {
   margin-bottom: 8px;
   border-radius: 4px;
-  overflow: hidden;
+  overflow: hidden; /* When expanding, edges of photo disappear.*/
   display: flex;
 }
 
