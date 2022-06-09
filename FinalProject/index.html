@@ -8,14 +8,17 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <section id="navbar">
-        <figure class="nav__logo">
-            <img src="./assets/footer_logo.svg" alt="">
-        </figure>
-        <h1>Treact</h1>
-
-        <nav>
-            <div class="landing">
+    <section> <!-- Plan to have nav & landing here.-->
+        <div class="row">
+            <div class="nav">
+                <div class="logo__section">
+                    <figure class="nav__logo">
+                        <img src="./assets/w-solid.svg" alt="">
+                    </figure>
+    
+                    <h1 class="nav__logo--name">Treact</h1>
+                </div>
+    
                 <ul class="nav__linklist">
                     <li class="nav__link">
                         <a href="#">About</a>
@@ -29,16 +32,42 @@
                     <li class="nav__link">
                         <a href="#">Contact Us</a>
                     </li>
+                    <!-- <li class="nav__link">
+                        <a href="#">Login</a>
+                    </li> -->
                 </ul>
+
+                <div class="membership">
+                    <a href="#">Login</a>
+                    <button class="nav__button">Sign Up</button>
+                </div>
             </div>
 
-            <div class="membership">
-                <a href="#">Login</a>
-                <button>Sign Up</button>
-            </div>
-        </nav>
+            <div class="landing">
+                <div class="landing__left">
+                    <h1>Beautiful React Templates <span class="purple">for you.</span></h1>
 
-        
+                    <p>Our templates are easy to setup, understand, and customize.
+                        Fully modular components with a variety of pages and features.
+                    </p>
+
+                    <div class="landing__email">
+                        <input type="email" name="" placeholder="Your E-mail Address">
+                    </div>
+                    <button>Get Started</button>
+
+                    <h6>OUR TRUSTED CUSTOMERS</h6>
+                    <figure class="landing__customers">
+                        <img src="./assets/customers.png" alt="">
+                    </figure>
+                </div>
+
+                <figure class="landing__image">
+                    <img src="./assets/landing.svg" alt="">
+                </figure>
+                
+            </div>
+        </div>
     </section>
 </body>
 </html>

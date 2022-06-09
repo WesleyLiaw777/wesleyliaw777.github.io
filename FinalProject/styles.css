@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
 
 /*
-
-GENERAL
-
+GENERAL, ELEMENTS
 */
 
 *{
@@ -11,6 +9,10 @@ GENERAL
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+.purple{
+    color:purple;
 }
 
 a{
@@ -25,8 +27,54 @@ button{
     padding: 8px 20px;
 }
 
+ul{
+    list-style-type: none;
+}
+
 /*
-
-NAVBAR
-
+GENERAL, CLASSES
 */
+
+.row{
+    width:100%;
+    max-width:1200px;
+    margin: 0 auto;
+}
+
+/*
+NAVBAR
+*/
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo{
+    width: 50px;
+    height: 50px;
+    background-color:cornflowerblue;
+    color:white;
+}
+
+.logo__section{
+    display: flex;
+    align-items: center;
+}
+
+.nav__logo--name{
+    margin-left: 16px;
+}
+
+.nav__linklist{
+    display: flex;
+}
+
+.nav__link{
+    padding-left: 30px;
+}
+
+.nav__button{
+    margin-left: 16px;
+}
