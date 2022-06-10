@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Project</title>
+    <title>Week 2 Final Project</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <section> <!-- Plan to have nav & landing here.-->
+    <section id="landing">
         <div class="row">
-            <div class="nav">
+            <nav>
                 <div class="logo__section">
                     <figure class="nav__logo">
                         <img src="./assets/w-solid.svg" alt="">
@@ -18,52 +18,50 @@
     
                     <h1 class="nav__logo--name">Treact</h1>
                 </div>
-    
-                <ul class="nav__linklist">
-                    <li class="nav__link">
-                        <a href="#">About</a>
-                    </li>
-                    <li class="nav__link">
-                        <a href="#">Blog</a>
-                    </li>
-                    <li class="nav__link">
-                        <a href="#">Pricing</a>
-                    </li>
-                    <li class="nav__link">
-                        <a href="#">Contact Us</a>
-                    </li>
-                    <!-- <li class="nav__link">
-                        <a href="#">Login</a>
-                    </li> -->
-                </ul>
+                
+                <div class="links__section">
 
-                <div class="membership">
+                    <ul class="nav__linklist">
+                        <li class="nav__link">
+                            <a href="#">About</a>
+                        </li>
+                        <li class="nav__link">
+                            <a href="#">Blog</a>
+                        </li>
+                        <li class="nav__link">
+                            <a href="#">Pricing</a>
+                        </li>
+                        <li class="nav__link">
+                            <a href="#">Contact Us</a>
+                        </li>
+                    </ul>
+    
                     <a href="#">Login</a>
                     <button class="nav__button">Sign Up</button>
                 </div>
-            </div>
+            </nav>
 
             <div class="landing">
-                <div class="landing__left">
-                    <h1>Beautiful React Templates <span class="purple">for you.</span></h1>
+                <div class="landing__info--wrapper">
+                    <h1 class="opener__text">Beautiful React Templates <span class="purple">for you.</span></h1>
 
-                    <p>Our templates are easy to setup, understand, and customize.
+                    <p class="section__paragraph">Our templates are easy to setup, understand, and customize.
                         Fully modular components with a variety of pages and features.
                     </p>
 
-                    <div class="landing__email">
-                        <input type="email" name="" placeholder="Your E-mail Address">
+                    <div class="landing__email--wrapper">
+                        <input class="email__box" type="email" name="" placeholder="      Your E-mail Address">
+                        <button class="email__button">Get Started</button>
                     </div>
-                    <button>Get Started</button>
 
-                    <h6>OUR TRUSTED CUSTOMERS</h6>
-                    <figure class="landing__customers">
-                        <img src="./assets/customers.png" alt="">
+                    <h6 class="customer__list">Our trusted customers</h6>
+                    <figure class="landing__customers--wrapper">
+                        <img class="landing__customers" src="./assets/customers.png" alt="">
                     </figure>
                 </div>
 
-                <figure class="landing__image">
-                    <img src="./assets/landing.svg" alt="">
+                <figure class="landing__image--wrapper">
+                    <img class="landing__image"src="./assets/landing.svg" alt="">
                 </figure>
                 
             </div>
