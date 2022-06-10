@@ -191,11 +191,9 @@ LANDING
 FEATURES
 */
 
-.features__service{
-    display: flex;
-    align-items: center;
-    width: calc(100%/3);
-}
+/* .features__container{
+    height: 100vh;
+} */
 
 .features__description{
     display: flex;
@@ -208,11 +206,12 @@ FEATURES
     flex-wrap: wrap;
 }
 
-.service__img--wrapper{
+.features__service{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    width: calc(100%/3);
+}
 
+.service__img--wrapper{
     height: 50px;
     width: 50px;
     margin-right: 12px;
