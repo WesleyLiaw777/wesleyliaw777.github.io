@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;600;700&display=swap');
 
 /*
 GENERAL, ELEMENTS
@@ -278,4 +278,75 @@ QUALITY WORK
 .work__image{
     height: 100%;
     width: 100%;
+}
+
+/*
+STEPS
+*/
+
+.steps__container{
+    display: flex;
+}
+
+.steps__image--wrapper{
+    width: 50%;
+}
+
+.steps__image{
+    width: 100%;
+    height: 100%;
+}
+
+.steps__description{
+    width: 50%;
+}
+
+.numbered__step{
+    display: flex;
+    margin-bottom: 24px;
+    margin-top: 36px;
+}
+
+.step__number{
+    font-weight: 600;
+    font-size: 2.25rem;
+    line-height: 1;
+    opacity: 0.18;
+    margin-right: 36px;
+}
+
+.step__title{
+    line-height: 1;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.step__para{
+    margin-top: 0.75rem;
+    max-width: 20rem;
+    line-height: 2;
+    font-size: 0.875rem;
+    font-weight: 500;
+    opacity: 0.6;
+}
+
+/*
+VALUES
+*/
+
+.values__container{
+    display: flex;
+}
+
+.values__info{
+    width: 50%;
+}
+
+.values__image--wrapper{
+    width: 50%;
+}
+
+.values__image{
+    width: 100%;
+    height: 100%;
 }
