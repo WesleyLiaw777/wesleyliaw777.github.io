@@ -350,3 +350,49 @@ VALUES
     width: 100%;
     height: 100%;
 }
+
+/*
+PRICING
+*/
+
+.pricing__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plans{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.plan{
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+TESTIMONIALS
+*/
+
+#testimonials{
+    display: flex;
+}
+
+.testimonials__container{
+    display: flex;
+}
+
+.testimonials__info{
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonials__image--wrapper{
+    width: 50%;
+}
+
+.testimonials__info{
+    width: 50%;
+}
