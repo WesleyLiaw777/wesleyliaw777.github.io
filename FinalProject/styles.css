@@ -415,3 +415,41 @@ TESTIMONIALS
 .review__person--image{
     width: 25%;
 }
+
+/*
+HOOK
+*/
+
+.hook__container{
+    display: flex;
+}
+
+.hook__info{
+    width: 50%;
+}
+
+.hook__buttons{
+    display: flex;
+}
+
+/*
+FOOTER
+*/
+
+.links{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.link__group{
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 5);
+    align-items: center;
+}
+
+.footer__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
