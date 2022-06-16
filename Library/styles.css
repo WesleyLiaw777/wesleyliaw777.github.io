@@ -15,6 +15,10 @@ body {
   overflow-x: hidden;
 }
 
+section .pricing{
+  margin-bottom: 8000px;
+}
+
 nav {
   height: 80px;
   display: flex;
