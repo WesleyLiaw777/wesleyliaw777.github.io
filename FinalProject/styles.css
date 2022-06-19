@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;600;700;800;900&display=swap');
 
 /*
 GENERAL, ELEMENTS
@@ -99,22 +99,22 @@ nav{
     width: 40px;
     height: 40px;
     background-color: #0f6a16;
+    border-radius: 4px;
 }
 
 .nav__logo{
-    height: 80%;
-    width: 80%;
-    font-size: 35px;
+    font-size: 25px;
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 7px;
+    margin-left: 6px;
 }
 
 .nav__logo--link {
     margin-left: 20px;
-    font-weight: bold;
-    font-size: px;
+    font-weight: 800;
+    font-size: 1.5em;
+    letter-spacing: 0.02em;
+    opacity: 0.75;
 }
 
 .logo__section{
@@ -134,17 +134,21 @@ nav{
 
 .nav__link{
     padding-left: 48px;
-    color: grey;
-    font-weight:bold;
+    font-weight: 600;
+    font-size: 15px;
+    opacity: 0.65;
 }
 
 .login__link{
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 15px;
+    opacity: 0.65;
 }
 
 .nav__button{
     margin-left: 16px;
-    
+    padding: 12px 32px;
+    border-radius: 9999px;
 }
 
 /*
@@ -160,13 +164,21 @@ LANDING
     width:40%;
 }
 
-.landing__email--wrapper{
-    height:10%;
+.landing__opener--text{
+    font-size: 30px;
 }
 
-.email__box{
-    border-radius: 9999px;
-    width:70%;
+.landing__para{
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+    font-size: 17px;
+    font-weight: 400;
+    opacity: 0.7;
+    word-spacing: 2px;
+}
+
+.landing__email--wrapper{
+    height:10%;
 }
 
 .landing__image--wrapper{
@@ -192,12 +204,19 @@ LANDING
 }
 
 .email__box{
-    position:relative;
+    position: relative;
+    border-radius: 400px;
+    width: 400px;
 }
 
 .email__button{
-    position:relative;
+    position: absolute;
+    border-radius: 9999px;
+    padding: 12px 36px;
+    
+    top: 5px;
     right: 125px;
+    height: 80%;
 }
 
 .customer__list{
