@@ -95,11 +95,20 @@ nav{
     padding: 0 20px;
 }
 
-.nav__logo{
+.nav__logo--wrapper{
     width: 40px;
     height: 40px;
-    background-color:cornflowerblue;
-    color:white;
+    background-color: #0f6a16;
+}
+
+.nav__logo{
+    height: 80%;
+    width: 80%;
+    font-size: 35px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav__logo--link {
@@ -242,7 +251,7 @@ FEATURES
     margin: 12px 0 30px 0;
 }
 
-.fa-solid{
+.feature__logo{
     color: #0f6a16;
     padding: 12px;
     border: 2px solid #e5e7eb;
