@@ -223,22 +223,31 @@
                     </p>
     
                     <div class="value__section">
-                        <div class="the__value">
-                            <i class="fa-solid fa-circle-dollar"></i>
-    
-                            <div class="value__title"></div>
+                        <div class="the__values--container">
+                            <div class="the__value">
+                                <div class="value__name">
+                                    <i class="fa-solid fa-dollar-sign"></i>
+                                    <h3 class="value__header">Affordable</h3>
+                                </div>
+                                <p class="the__value--para">
+                                    Our rates are the best. We will outprice any competitor to make sure you spend the most.
+                                    We don't haggle prices around here. But we can work with your budget to create an appropriate quality result.
+                                </p>
+                            </div>
+
+                            <div class="the__value">
+                                <div class="value__name">
+                                    <i class="fa-solid fa-briefcase"></i>
+                                </div>
+                                <h3 class="value__header">Professionalism</h3>
+
+                                <p class="the__value--para">
+                                    We don't cut corners, and we work with only the most qualified designers.
+                                </p>
+                            </div>
                         </div>
-    
-                        <h1 class="the__value">
-                            Affordable
-                        </h1>
-    
-                        <p class="the__value--para">Our rates are the best. We will outprice any competitor to make sure you spend the most.
-                            We don't haggle prices around here. But we can work with your budget to create an appropriate quality result.
-                        </p>
-                        
                     </div>
-                    
+                    <button>Learn More</button>
                 </div>
     
         
@@ -251,7 +260,7 @@
     </section>
 
     <section id="pricing">
-        <div class="row">
+        <div class="row pricing__container">
             <div class="pricing__info">
                 <div class="section__title">Pricing</div>
                 <h1 class="opener__text">Reasonable & Flexible <span class="color">Plans.</span></h1>
@@ -305,59 +314,56 @@
     </section>
 
     <section id="testimonials">
-        <div class="row">
-            <div class="testimonials__container">
-                <figure class="testimonials__image--wrapper">
-                    <img class="testimonials__image" src="./assets/testimonials.svg" alt="">
-                </figure>
-    
-                <div class="testimonials__info">
-                    <div class="section__title">Testimonials</div>
-                    <h1 class="opener__text">Our Clients <span class="color">Love Us.</span></h1>
-                    <p class="opener__paragraph">
-                        Love is a subjective term. What does it mean to love someone?
-                        Trust? Willingness to go above and beyond for another? Think about it.
-                    </p>
-    
-                    <div class="testimonials__review">
-                        <div class="rating">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half"></i>
+        <div class="row testimonials__container">
+            <figure class="testimonials__image--wrapper">
+                <img class="testimonials__image" src="./assets/testimonials.svg" alt="">
+            </figure>
+
+            <div class="testimonials__info">
+                <div class="section__title">Testimonials</div>
+                <h1 class="opener__text">Our Clients <span class="color">Love Us.</span></h1>
+                <p class="opener__paragraph">
+                    Love is a subjective term. What does it mean to love someone?
+                    Trust? Willingness to go above and beyond for another? Think about it.
+                </p>
+
+                <div class="testimonials__review">
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                    </div>
+
+                    <div class="review__title">Amazing User Experience</div>
+                    <div class="review__details">
+                        I'm in FES right now and I'm especially appreciative that David
+                        addresses the mental aspect of becoming better. FES gives you everything you need, and nothing more.
+                        Although, I do think FES would benefit from 1) a "how-to" on recovering from setbacks and
+                        2) an approach to creating a new website. I was overwhelmed with the Week 2 Final Project
+                        until I decided to do the HTML first before the CSS. Before, I was trying to make every section
+                        perfect before I moved on to the next.
+                    </div>
+
+                    <div class="review__person">
+                        <figure class="review__person--wrapper">
+                            <img class="review__person--image" src="./assets/wes.jpg" alt="">
+                        </figure>
+                        
+                        <div class="review__person--info">
+                            <h2 class="review__person--name">Wes</h2>
+                            <h3 class="review__person--title">Current FES Student</h3>
                         </div>
-    
-                        <div class="review__title">Amazing User Experience</div>
-                        <div class="review__details">
-                            I'm in FES right now and I'm especially appreciative that David
-                            addresses the mental aspect of becoming better. FES gives you everything you need, and nothing more.
-                            Although, I do think FES would benefit from 1) a "how-to" on recovering from setbacks and
-                            2) an approach to creating a new website. I was overwhelmed with the Week 2 Final Project
-                            until I decided to do the HTML first before the CSS. Before, I was trying to make every section
-                            perfect before I moved on to the next.
-                        </div>
-    
-                        <div class="review__person">
-                            <figure class="review__person--wrapper">
-                                <img class="review__person--image" src="./assets/wes.jpg" alt="">
-                            </figure>
-                            
-                            <div class="review__person--info">
-                                <h2 class="review__person--name">Wes</h2>
-                                <h3 class="review__person--title">Current FES Student</h3>
-                            </div>
-                            
-                        </div>
+                        
                     </div>
                 </div>
             </div>
-            
         </div>
     </section>
 
     <section id="faqs">
-        <div class="row">
+        <div class="row faqs__container">
             <div class="section__title">FAQs</div>
             <h1 class="opener__text">You have <span class="color">Questions?</span></h1>
             <p class="opener__paragraph">And you can figure them out on your own. Just kidding, here.</p>
@@ -409,7 +415,6 @@
 <footer>
     <div class="row">
         <div class="links">
-
             <div class="link__group">
                 <h3 class="link__title">Main</h3>
                 <div class="link__list">
