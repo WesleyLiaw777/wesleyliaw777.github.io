@@ -11,14 +11,6 @@ GENERAL, ELEMENTS
     box-sizing: border-box;
 }
 
-body{
-    padding: 0 100px;
-}
-
-.color{
-    color:#0f6a16;
-}
-
 a{
     text-decoration: none;
     color: black;
@@ -55,7 +47,7 @@ GENERAL, CLASSES
 .row{
     width:100%;
     max-width:1200px;
-    margin: 0 auto;
+    margin: 100px auto;
 }
 
 .container{
@@ -69,9 +61,15 @@ GENERAL, CLASSES
     margin-bottom: 16px;
 }
 
-.opener_text{
-    font-size: 48px;
+.opener__text{
+    font-size: 56px;
     font-weight: 900;
+    opacity: 0.9;
+}
+
+.color{
+    color:#0f6a16;
+    opacity: 1;
 }
 
 .section__paragraph{
@@ -319,6 +317,7 @@ QUALITY WORK
 
 .work__image--wrapper{
     width:50%;
+    height: 50%;
 }
 
 .work__image{
@@ -375,7 +374,7 @@ STEPS
     line-height: 2;
     font-size: 0.875rem;
     font-weight: 500;
-    opacity: 0.6;
+    opacity: 0.45;
 }
 
 /*
@@ -385,6 +384,32 @@ VALUES
 .values__container{
     display: flex;
     margin-bottom: 240px;
+}
+
+.the__values--container{
+    display: flex;
+}
+
+.the__value{
+    width: 40%;
+    margin-right: 50px;
+}
+
+.the__value--para{
+    font-size: 16px;
+    opacity: 0.6;
+    word-spacing: 2px;
+    line-height: 24px;
+}
+
+.value__name{
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.value__header{
+    margin-left: 12px;
 }
 
 .values__info{
@@ -399,6 +424,31 @@ VALUES
     width: 100%;
     height: 100%;
 }
+
+/* color: #0f6a16;
+    padding: 12px;
+    border: 2px solid #e5e7eb;
+    border-radius: 50%;
+    font-size: 24px;
+     */
+
+.value__icon{
+    padding: 12px;
+    border-radius: 24px;
+    border: 2px #fff;
+    
+}
+
+.fa-dollar-sign{
+    background-color: #5cd274;
+    color: green;
+}
+
+.fa-briefcase{
+    background-color: rgb(204, 165, 165);
+    color: rgb(142, 21, 21);
+}
+
 
 /*
 PRICING
