@@ -342,7 +342,12 @@ FEATURES
   display: flex;
 }
 
-.book:hover .book__img {
+/* .book:hover .book__img {
+  transform: scale(1.03);
+} */
+
+/* This seems to work the same, but cleaner. */
+.book__img:hover{
   transform: scale(1.03);
 }
 
