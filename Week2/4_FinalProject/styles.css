@@ -21,7 +21,7 @@ body{
 
 a{
     text-decoration: none;
-    color: black;
+    /* color: black; */
 }
 
 h1{
@@ -42,6 +42,11 @@ button{
     background-color: #0f6a16;
     border-radius: 9999px;
     padding: 14px 20px;
+}
+
+button:hover {
+    /* background-color:rgba(0, 0, 0, 0.5); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0 0);
 }
 
 ul{
@@ -111,6 +116,24 @@ GENERAL, CLASSES
     margin-bottom: 60px;
 }
 
+#landing{
+    position: relative;
+}
+
+.slider__section{
+    transition: all 500ms ease;
+}
+
+.slider__section:before{
+    opacity: 0;
+    transform: translateX(-1200px);
+}
+
+.slider__section:active{
+    opacity: 1;
+    transform: translateX(1200px);
+}
+
 /*
 NAVBAR
 */
@@ -129,6 +152,9 @@ nav{
     height: 40px;
     background-color: #0f6a16;
     border-radius: 4px;
+
+    display: flex;
+    align-items: center;
 }
 
 .nav__logo{
@@ -136,6 +162,7 @@ nav{
     color: white;
     margin-top: 7px;
     margin-left: 6px;
+    margin-bottom: 7px;
 }
 
 .nav__logo--link {
@@ -143,25 +170,12 @@ nav{
     font-weight: 800;
     font-size: 1.5em;
     letter-spacing: 0.02em;
-}
-
-.nav__logo--link{
     transition: color 300ms ease;
 }
 
 .nav__logo--link:hover{
     color: #0f6a16;
 }
-
-.nav__link:hover{
-    text-decoration: underline;
-    transition: all 300ms ease;
-}
-
-/* .nav__logo--link:hover:after{
-    color: black;
-    transition: all 300ms ease;
-} */
     
 .logo__section{
     display: flex;
@@ -183,12 +197,30 @@ nav{
     font-weight: 600;
     font-size: 15px;
     opacity: 0.65;
+
+    text-decoration: 2px solid transparent underline;
+    text-underline-offset: 8px;
+    transition: all 300ms ease;
+    
+}
+
+.nav__link:hover{
+    color: red;
+    text-decoration-color: #0b4c10;
 }
 
 .login__link{
     font-weight: 600;
     font-size: 15px;
     opacity: 0.65;
+
+    text-decoration: 2px solid transparent underline;
+    text-underline-offset: 8px;
+    transition: all 300ms ease;
+}
+
+.login__link:hover{
+    text-decoration-color: #0b4c10;
 }
 
 .nav__button{
@@ -583,6 +615,13 @@ PRICING
     border-radius: 9999px;
     padding: 20px 60px;
     margin: 15px 0;
+
+    transition: all 300ms ease;
+}
+
+.plan__button:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,1);
 }
 
 .business{
@@ -720,7 +759,8 @@ HOOK
     border-radius: 9999px;
 }
 
-.hook__button:hover{
+.hook__button:hover {
+    background-color: rgba(0,0,0,0.1);
 }
 
 .hook__start{
@@ -824,4 +864,55 @@ footer{
 
 .fa-twitter{
     margin: 0 24px;
+}
+
+@media (max-width: 768px) {
+
+.features__service--list,
+.work__container,
+.steps__container,
+.values__container,
+.the__values--container,
+.plans,
+.testimonials__container,
+.hook__container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hook__info{
+width: 100%;
+padding: 0 18px;
+margin-bottom: 24px;
+}
+
+.hook__line{
+    margin: 0;
+}
+
+.link__group{
+width: 30%;
+margin-bottom: 30px;
+}
+
+.link__group:nth-child(1n+4){
+margin-bottom: 0;
+}
+
+.links{
+justify-content:space-around;
+padding: 120px 0 30px 0;
+}
+
+.footer__info{
+display: flex;
+flex-direction: column;
+}
+
+.footer__copyright{
+margin: 30px 0;
+}
+
 }

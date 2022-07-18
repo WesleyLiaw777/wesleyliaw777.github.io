@@ -221,6 +221,7 @@ nav {
   display: flex;
   align-items: center;
 }
+
 .about-me__img {
   width: 100%;
   animation: fade-in 1200ms 800ms backwards;
@@ -320,6 +321,7 @@ nav {
   overflow: hidden;
   position: relative;
 }
+
 .project__wrapper:before {
   content: "";
   position: absolute;
@@ -333,6 +335,7 @@ nav {
   z-index: 2;
   transform: translateY(100%);
 }
+
 .project:hover .project__wrapper:before {
   transform: translateY(0);
   opacity: 0.7;
