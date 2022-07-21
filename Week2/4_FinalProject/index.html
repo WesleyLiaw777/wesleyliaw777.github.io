@@ -7,6 +7,7 @@
     <title>Week 2 Final Project</title>
     <link rel="stylesheet" href="./styles.css">
     <script src="https://kit.fontawesome.com/80f09bcac6.js" crossorigin="anonymous"></script></head>
+    <script src="index.js"></script>
 <body>
     <section id="landing">
         <div class="row">
@@ -22,22 +23,43 @@
                 <div class="links__section">
 
                     <ul class="nav__linklist">
-                        <li class="nav__link">
-                            <a href="#">About</a>
+                        <li>
+                            <a class="nav__link" href="#">About</a>
                         </li>
-                        <li class="nav__link">
-                            <a href="#">Blog</a>
+                        <li>
+                            <a class="nav__link" href="#">Blog</a>
                         </li>
-                        <li class="nav__link">
-                            <a href="#">Pricing</a>
+                        <li>
+                            <a class="nav__link" href="#">Pricing</a>
                         </li>
-                        <li class="nav__link">
-                            <a href="#">Contact Us</a>
+                        <li>
+                            <a class="nav__link" href="#">Contact Us</a>
                         </li>
                     </ul>
     
-                    <a class="login__link" href="#">Login</a>
+                    <a class="nav__link login__link" href="#">Login</a>
                     <button class="nav__button">Sign Up</button>
+
+
+                    <button class="button__menu" onclick="openMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                    <div class="menu__backdrop">
+                        <button class="button__menu button__menu--close" onclick="closeMenu()">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </button>
+
+                        <ul>
+                            <li class="menu__list"><a href="#" class="menu__link" onclick="closeMenu()" >About</a></li>
+                            <li class="menu__list"><a href="#" class="menu__link" onclick="closeMenu()" >Blog</a></li>
+                            <li class="menu__list"><a href="#" class="menu__link" onclick="closeMenu()" >Pricing</a></li>
+                            <li class="menu__list"><a href="#" class="menu__link" onclick="closeMenu()" >Contact Us</a></li>
+                            <li class="menu__list"><a href="#" class="menu__link" onclick="closeMenu()" >Login</a></li>
+                        </ul>
+
+                        <button>Sign Up</button>
+                    </div>
                 </div>
             </nav>
 
