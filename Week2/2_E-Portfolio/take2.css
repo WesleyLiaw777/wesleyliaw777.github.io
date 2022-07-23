@@ -25,7 +25,8 @@ li{
     list-style-type: none;
 }
 
-.text--purple{
+.emphasis{
+    font-weight: 700;
     color: #6030b1;
 }
 
@@ -129,11 +130,33 @@ ABOUT ME
     padding-top: 0px;
 }
 
+.about-me__info{
+    display: flex;
+    flex-direction: column;
+}
+
 .about-me__info--title{
     margin-bottom: 16px;
 }
 
 .about-me__info--para{
     font-size: 20px;
-    margin-bottom: 28px;    
+    margin-bottom: 28px;
+}
+
+.about-me__link{
+    font-size: 20px;
+    color: #242424;
+    text-decoration: none;
+    padding: 0 16px;
+}
+
+.about-me__img--container{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.about-me__img{
+    width: 100%;
 }
